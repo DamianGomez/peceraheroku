@@ -31,7 +31,7 @@ class UserModel {
 
 	async listar() {//Devuelve todas las filas de la tabla usuario
 		//const db=this.connection;
-		const usuarios = await this.db.query('SELECT * FROM usuarios');
+		const usuarios = await this.db.query('SELECT * FROM usuario');
 		//console.log(usuarios[0]);
 		//devuelve tabla mas propiedades. Solo debemos devolver tabla. Posicion 0 del array devuelto.
 		return usuarios[0];

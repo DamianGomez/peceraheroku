@@ -40,7 +40,7 @@ class UserModel {
     listar() {
         return __awaiter(this, void 0, void 0, function* () {
             //const db=this.connection;
-            const usuarios = yield this.db.query('SELECT * FROM usuarios');
+            const usuarios = yield this.db.query('SELECT * FROM usuario');
             //console.log(usuarios[0]);
             //devuelve tabla mas propiedades. Solo debemos devolver tabla. Posicion 0 del array devuelto.
             return usuarios[0];
